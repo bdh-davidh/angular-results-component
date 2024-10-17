@@ -158,7 +158,7 @@ body {
   line-height: 1.6;
   text-align: center;
   background-color: var(--clr-neutral-light);
-  background-color: #1125D630;
+  background-color: #1125d630;
 }
 
 main {
@@ -210,18 +210,14 @@ p {
   }
 }
 
-.flow {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.stack > * + * {
+  margin-inline: auto;
+  margin-block-start: var(--stack, var(--space-s, 1em));
 }
 
-.flow > * {
-  margin-block: 0;
-}
-
-.flow > * + * {
-  margin-block-start: var(--space, var(--space-xs));
+.box {
+  padding-inline: var(--padding-inline, var(--space-s, 2em));
+  padding-block: var(--padding-block, var(--space-xl, 3em));
 }
 
 .visually-hidden {
