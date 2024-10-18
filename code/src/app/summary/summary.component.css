@@ -1,8 +1,21 @@
 :host {
-    min-inline-size: 18rem;
-    flex: 1 1 0;
+  min-inline-size: 18rem;
+  flex: 1 1 0;
 }
 
 .summary {
+  display: flex;
   min-block-size: 100%;
+  flex-direction: column;
+  text-align: start;
+}
+
+button {
+  inline-size: 100%;
+  margin-block-start: auto;
+  border-radius: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--clr-neutral-light);
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
 }

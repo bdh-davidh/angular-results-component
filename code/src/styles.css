@@ -85,7 +85,8 @@ img[src$=".svg"] {
 
 /* Remove all default button styles */
 button {
-  all: unset;
+  border: none;
+  font: inherit;
   cursor: pointer;
 }
 
