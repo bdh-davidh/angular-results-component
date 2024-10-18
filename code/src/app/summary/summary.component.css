@@ -1,5 +1,8 @@
+:host {
+    min-inline-size: 18rem;
+    flex: 1 1 0;
+}
+
 .summary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  min-block-size: 100%;
 }

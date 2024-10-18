@@ -145,7 +145,7 @@ select {
   --clr-memory: #ffb21e;
   --clr-verbal: #00bb8f;
   --clr-visual: #1125d6;
-  --clr-gradient: #75f, #6943ff, #2f2ce9;
+  --clr-gradient: linear-gradient(0deg, 60% #2f2ce9, 80% #75f, 95% #6943ff);
 }
 
 /* GLOBAL STYLES  */
@@ -155,9 +155,8 @@ body {
   font-family: system-ui, sans-serif;
   font-size: var(--font-size-0);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   text-align: center;
-  background-color: var(--clr-neutral-light);
   background-color: #1125d630;
 }
 
@@ -165,18 +164,22 @@ main {
   min-block-size: 100vh;
 }
 
-:is(h1, h2) {
+:is(h1, h2, h3) {
   max-inline-size: min(100%, 28ch);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
 }
 
 h2 {
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-1);
+}
+
+h3 {
+  font-size: var(--font-size-2);
 }
 
 p {
@@ -196,8 +199,8 @@ p {
 /* UTILITIES */
 
 .layout {
-  --min: 320px;
-  --max: 800px;
+  --min: 250px;
+  --max: 700px;
 
   display: grid;
   grid-template-columns:
@@ -216,8 +219,8 @@ p {
 }
 
 .box {
-  padding-inline: var(--padding-inline, var(--space-s, 2em));
-  padding-block: var(--padding-block, var(--space-xl, 3em));
+  padding-inline: var(--padding-inline, var(--space-m, 2em));
+  padding-block: var(--padding-block, var(--space-l, 3em));
 }
 
 .visually-hidden {
