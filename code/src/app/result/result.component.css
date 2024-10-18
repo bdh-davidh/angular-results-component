@@ -12,6 +12,7 @@
 
 .score-wrapper {
   display: grid;
+  margin-inline: auto;
   max-inline-size: 12rem;
   aspect-ratio: 1;
   border-radius: 9999px;
