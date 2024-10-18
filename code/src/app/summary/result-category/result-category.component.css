@@ -7,11 +7,40 @@
 .pill {
   display: inline-flex;
   inline-size: 100%;
-  border: 1px solid currentcolor;
-  border-radius: 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  align-items: center;
   gap: var(--space-xs);
+  font-weight: 500;
+}
+
+.score-wrapper {
+  margin-inline-start: auto;
+  font-weight: 700;
+  color: var(--clr-neutral-dark);
 }
 
 .category-score {
-  margin-inline-start: auto;
+  font-weight: 900;
+  color: #303B59;
+}
+
+.reaction   {
+  background-color: #fef6f6;
+}
+
+
+.memory  {
+  background-color: #fefbf5;
+
+}
+
+.verbal   {
+  background-color: #f4fcf9;
+
+}
+
+.visual   {
+  background-color: #f3f4fc;
+
 }

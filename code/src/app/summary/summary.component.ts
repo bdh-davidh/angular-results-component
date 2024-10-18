@@ -3,8 +3,6 @@ import { ResultCategoryComponent } from './result-category/result-category.compo
 import { UsersService } from '../users.service'
 import { User } from '../user.model'
 
-
-
 @Component({
   selector: 'app-summary',
   standalone: true,
@@ -22,5 +20,9 @@ export class SummaryComponent {
 
   getRandomUser() {
     this.user = (this.usersService.getRandomUser());
+  }
+
+  ngOnInit() {
+    this.user = this.usersService.getRandomUser();
   }
 }

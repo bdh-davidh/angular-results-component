@@ -27,6 +27,7 @@ ul,
 ol,
 button {
   margin: 0;
+  padding: 0;
   overflow-wrap: break-word;
 }
 
@@ -141,7 +142,7 @@ select {
 
   /* Colors */
   --clr-neutral-light: #fff;
-  --clr-neutral-dark: #303b59;
+  --clr-neutral-dark: #9899a7;
   --clr-reaction: #f55;
   --clr-memory: #ffb21e;
   --clr-verbal: #00bb8f;

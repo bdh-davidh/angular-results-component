@@ -19,7 +19,7 @@
   place-items: center;
   background: linear-gradient(180deg, #4D21C9 0%, rgb(37 33 201 / 0%) 100%, rgb(37 33 201 / 0%) 100%);
 
-  .score {
+  .total-score {
     font-size: calc(var(--font-size-4) * 1.5);
     font-weight: 900;
     line-height: 1;

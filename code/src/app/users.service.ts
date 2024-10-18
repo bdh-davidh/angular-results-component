@@ -11,22 +11,22 @@ export class UsersService {
       id: 1,
       results: [
         {
-          category: 'Reaction',
+          category: 'reaction',
           score: 80,
           icon: './assets/images/icon-reaction.svg',
         },
         {
-          category: 'Memory',
+          category: 'memory',
           score: 92,
           icon: './assets/images/icon-memory.svg',
         },
         {
-          category: 'Verbal',
+          category: 'verbal',
           score: 61,
           icon: './assets/images/icon-verbal.svg',
         },
         {
-          category: 'Visual',
+          category: 'visual',
           score: 72,
           icon: './assets/images/icon-visual.svg',
         },
@@ -36,22 +36,22 @@ export class UsersService {
       id: 2,
       results: [
         {
-          category: 'Reaction',
+          category: 'reaction',
           score: 20,
           icon: './assets/images/icon-reaction.svg',
         },
         {
-          category: 'Memory',
+          category: 'memory',
           score: 32,
           icon: './assets/images/icon-memory.svg',
         },
         {
-          category: 'Verbal',
+          category: 'verbal',
           score: 41,
           icon: './assets/images/icon-verbal.svg',
         },
         {
-          category: 'Visual',
+          category: 'visual',
           score: 12,
           icon: './assets/images/icon-visual.svg',
         },
@@ -61,22 +61,22 @@ export class UsersService {
       id: 3,
       results: [
         {
-          category: 'Reaction',
+          category: 'reaction',
           score: 50,
           icon: './assets/images/icon-reaction.svg',
         },
         {
-          category: 'Memory',
+          category: 'memory',
           score: 42,
           icon: './assets/images/icon-memory.svg',
         },
         {
-          category: 'Verbal',
+          category: 'verbal',
           score: 60,
           icon: './assets/images/icon-verbal.svg',
         },
         {
-          category: 'Visual',
+          category: 'visual',
           score: 74,
           icon: './assets/images/icon-visual.svg',
         },
@@ -86,22 +86,22 @@ export class UsersService {
       id: 3,
       results: [
         {
-          category: 'Reaction',
+          category: 'reaction',
           score: 98,
           icon: './assets/images/icon-reaction.svg',
         },
         {
-          category: 'Memory',
+          category: 'memory',
           score: 87,
           icon: './assets/images/icon-memory.svg',
         },
         {
-          category: 'Verbal',
+          category: 'verbal',
           score: 89,
           icon: './assets/images/icon-verbal.svg',
         },
         {
-          category: 'Visual',
+          category: 'visual',
           score: 92,
           icon: './assets/images/icon-visual.svg',
         },
