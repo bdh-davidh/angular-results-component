@@ -3,12 +3,12 @@
     class="box pill {{ result.category }}"
     style="--padding-block: var(--space-xs)"
   >
-    <img src="{{ result.icon }}" alt="" aria-hidden="true" />
+    <img [src]="result.icon" alt="" aria-hidden="true" />
     <span style="color: var(--clr-{{ result.category }});">{{
       result.category[0].toUpperCase() + result.category.slice(1)
     }}</span
     ><span class="score-wrapper"
-      ><span class="category-score" >{{ result.score }}</span> / 100</span
+      ><span class="category-score">{{ result.score }}</span> / 100</span
     >
   </li>
 }

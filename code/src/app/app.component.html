@@ -2,8 +2,8 @@
   <div class="component">
     <h1 class="visually-hidden">Test Results</h1>
     <div class="component-inner">
-      <app-result />
-      <app-summary />
+      <app-result [totalScore] = "score"/>
+      <app-summary (selectedUser)="onSelectedUser($event)"/>
     </div>
   </div>
 </main>

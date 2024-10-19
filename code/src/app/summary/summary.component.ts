@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ResultCategoryComponent } from './result-category/result-category.component';
 import { UsersService } from '../users.service'
 import { User } from '../user.model'
@@ -11,18 +11,21 @@ import { User } from '../user.model'
   styleUrl: './summary.component.css',
 })
 export class SummaryComponent {
+  @Output() selectedUser = new EventEmitter();
   usersService;
-  user!: User;
+  randomUser!: User;
 
   constructor(usersService: UsersService) {
     this.usersService = usersService;
   }
 
-  getRandomUser() {
-    this.user = (this.usersService.getRandomUser());
+  onContinue() {
+    this.randomUser = this.usersService.randomUser;
+    this.selectedUser.emit(this.randomUser);
   }
 
   ngOnInit() {
-    this.user = this.usersService.getRandomUser();
+    this.randomUser = this.usersService.randomUser;
+    this.selectedUser.emit(this.randomUser);
   }
 }

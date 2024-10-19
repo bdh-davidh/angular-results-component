@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from './user.model';
 
 @Injectable({
   providedIn: 'root',
@@ -109,7 +110,15 @@ export class UsersService {
     },
   ];
 
-  getRandomUser() {
+  calculateUserScore(user: User) {
+    return Math.round(
+      user.results.reduce((acc, cur) => {
+        return (acc += cur.score);
+      }, 0) / 4,
+    );
+  }
+
+  get randomUser() {
     return this.users[Math.floor(Math.random() * this.users.length)];
   }
 }

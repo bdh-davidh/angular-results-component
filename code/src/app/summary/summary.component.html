@@ -1,13 +1,13 @@
 <div class="stack box summary">
   <h2>Summary</h2>
   <ul class="stack summary-container">
-    <app-result-category [newUser]="user"/>
+    <app-result-category [newUser]="randomUser"/>
   </ul>
   <button
     class="box"
     type="button"
     style="--padding-block: var(--space-xs)"
-    (click)="getRandomUser()"
+    (click)="onContinue()"
   >
     Continue
   </button>
