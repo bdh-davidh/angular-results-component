@@ -7,9 +7,27 @@
     </div>
   </div>
   <div class="stack report">
-    <h3 class="rating">Great</h3>
+    <h3 class="rating">
+      @if (totalScore > 90) {
+        Amazing
+      } @else if (totalScore > 70) {
+        Great
+      } @else if (totalScore > 50) {
+        Good
+      } @else {
+        Not bad
+      }
+    </h3>
     <p class="description" style="--stack: var(--space-xs)">
-      Your performance exceed 65% of the people conducting the test here!
+      @if (totalScore > 90) {
+        Your performance exceeds 75% of the people conducting the test here!
+      } @else if (totalScore > 70) {
+        Your performance exceeds 50% of the people conducting the test here!
+      } @else if (totalScore > 50) {
+        Good effort - keep on trying, your performace is about average.
+      } @else {
+        Good effort - keep on trying! You've got a litle way to go!
+      }
     </p>
   </div>
 </div>
