@@ -1,5 +1,6 @@
 :host {
   min-inline-size: 18rem;
+  border-radius: 1rem;
   flex: 1 1 0;
   background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
 }
